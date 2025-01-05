@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #070707;
+    --background-2: #121212;
+    --background-3: #090909;
+    --background-4: #f0f0f0;
+    --background-5: #dfdfdf;
+    --border: #202020;
+    --border-2: #d8d8d8;
+    --color: #e0dfdd;
+    --color-2: #818181;
+    --color-3: #111111;
+    --color-4: #222222;
+    --color-5: #2c2c2c;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+
+body {
+    background: var(--background);
+    width: 100dvw;
+    overflow-x: hidden;
+}
+
+.text-active {
+    color: var(--color-2);
+}
+
+
+.stairs .transition-background {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #333;
+    z-index: 998;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+}
+
+.stairs .transition-container {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+    z-index: 999;
+
+}
+
+.stairs .transition-container div {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: var(--background-3);
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
