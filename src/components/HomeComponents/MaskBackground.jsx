@@ -12,9 +12,10 @@ const MaskBackground = () => {
                 trigger: '#clip',
                 start: 'start start',
                 end: '+=1500 center',
-                scrub: 0.5,
+                scrub: 1,
                 pin: true,
-                pinSpacing: true
+                pinSpacing: true,
+                ease: 'power1.inOut'
             }
         })
 
