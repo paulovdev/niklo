@@ -17,16 +17,15 @@ const Project = ({ name, src, alt }) => {
             whileHover="hover"
             initial="initial"
             animate="initial"
-            className="relative h-[90vh] p-[1rem] max-tablet:h-[60vh]"
+            className="relative h-[90vh] p-[1rem] max-tablet:h-[45vh]"
         >
             <img
-                className="w-full h-full rounded-[1.5rem] object-cover object-center"
+                className="w-full h-full rounded-[1.5rem] object-cover object-center max-tablet:rounded-[1rem]"
                 src={src}
-                width={1920}
-                height={1080}
                 alt={alt}
             />
-            <motion.div className="absolute w-[calc(100%_-_48px)] bottom-[24px] left-[24px] p-[1rem] text-color2 flex flex-col">
+            <motion.div
+                className="absolute w-[calc(100%_-_48px)] bottom-[24px] left-[24px] p-[1rem] bg-[#0000005b] backdrop-blur-lg rounded-[1.5rem] text-color2 flex flex-col max-tablet:rounded-[1rem]">
                 <h1 className="text-color text-[2rem] font-[600] tracking-[-1px]">{name}</h1>
                 <p className="text-color text-[1rem] font-[500]">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.

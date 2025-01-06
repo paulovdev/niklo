@@ -55,7 +55,7 @@ export default function Nav() {
 
     return (
         <>
-            <nav className="fixed w-full h-[5vh] top-0 pb-[3rem] pt-[2rem] px-[2.5rem] flex items-center z-50 pointer-events-none select-none">
+            <nav className="fixed w-full h-[5vh] top-0 pb-[3rem] pt-[2rem] px-[2.5rem] flex items-center z-50 pointer-events-none select-none max-tablet:px-[1rem]">
                 <ul className="w-full flex items-center justify-between">
                     {navigationsText.map((i) => (
                         <li className="w-fit h-[30px] overflow-hidden cursor-pointer pointer-events-auto" key={i.title}>

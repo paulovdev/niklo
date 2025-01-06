@@ -34,7 +34,7 @@ const MaskBackground = () => {
 
 
     return (
-        <div className='min-h-screen w-screen px-[2.5rem] flex items-center justify-center' id='about'>
+        <div className='min-h-screen w-screen px-[2.5rem] flex items-center justify-center max-tablet:px-[1rem]' id='about'>
             <div className="w-screen h-dvh" id='clip'>
                 <div className="image-background absolute left-1/2 top-0 z-20 h-[100vh] origin-center -translate-x-1/2 overflow-hidden rounded-3xl md:w-[30vw]"
                     style={{ width: '100%' }}>

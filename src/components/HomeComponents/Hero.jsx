@@ -52,7 +52,7 @@ const Hero = () => {
                         </div>
                     ))}
                 </div>
-                <Button title="More about us" rightIcon={<RiArrowRightDownLine />} containerClass='!bg-background2 flex flex-center gap-3' />
+                <Button title="More about us" rightIcon={<RiArrowRightDownLine />} containerClass='!bg-background2' />
             </div>
        
         </>

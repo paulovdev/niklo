@@ -3,8 +3,8 @@ import { NavLink } from "react-router-dom";
 
 const PerspectiveMenuText = ({ label, active }) => {
     return (
-        <div className="active-menu-link w-full h-full bg-none flex items-start justify-center flex-col">
-            <div className={`text-[4rem] ${active ? "text-active" : "text-color3"} font-[400]`}>
+        <div className="active-menu-link w-full h-full bg-none flex items-start justify-center flex-col ">
+            <div className={`text-[4rem] max-tablet:text-[2.5rem] ${active ? "text-active" : "text-color3"} font-[400]`}>
                 {label}
             </div>
         </div>
@@ -77,11 +77,12 @@ const Menu = ({ menuToggle, setMenuToggle }) => {
                     variants={contentAnim}
                     initial="closed"
                     animate={menuToggle ? "open" : "closed"}
-                    className="relative w-full h-full py-[4rem] px-[2.5rem] flex items-center justify-between border-b border-border2"
+                    className="relative w-full h-full py-[4rem] px-[2.5rem] flex items-center justify-between border-b border-border2 
+                    max-tablet:flex-col max-tablet:px-[1rem] max-tablet:py-[6rem]"
                 >
-                    <div className="w-full flex flex-wrap gap-[2.5rem]">
+                    <div className="w-full flex flex-wrap gap-[2.5rem] max-tablet:gap-[1rem]">
                         {navigationsMenuText.map((i) => (
-                            <div key={i.name} className="w-fit h-[80px] mb-4 overflow-hidden cursor-pointer">
+                            <div key={i.name} className="w-fit h-[80px] max-tablet:h-[50px] mb-4 overflow-hidden cursor-pointer">
                                 <NavLink
                                     to={i.href}
                                     className={({ isActive }) =>

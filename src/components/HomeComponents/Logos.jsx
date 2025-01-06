@@ -4,7 +4,7 @@ import gsap from "gsap";
 const LogoImg = ({ img, alt, widthPercentage }) => {
     return (
         <img
-            className="w-full h-[80px] invert-[1]"
+            className="w-full h-[80px] invert-[1] max-tablet:h-[50px]"
             src={img}
             width={150}
             height={40}
@@ -41,7 +41,7 @@ const Logos = () => {
         <div className="relative w-full h-[15vh] px-[2.5rem] bg-[#f34a03] backdrop-blur-xl overflow-hidden flex items-center justify-center">
             <div className="logos flex" animate="animate">
                 {duplicateImages.map((image, index) => (
-                    <div key={index} className="flex-shrink-0">
+                    <div key={index} className="flex-shrink-0 ">
                         <div className="flex flex-col items-center justify-center h-full">
                             <LogoImg
                                 img={image.img}
