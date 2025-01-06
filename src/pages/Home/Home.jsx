@@ -4,7 +4,7 @@ import MaskBackground from "../../components/HomeComponents/MaskBackground";
 import About from "../../components/HomeComponents/About";
 import Projects from "../../components/HomeComponents/Projects";
 
-import Layout from "../../utils/Transition/stairs";
+import Layout from "../../utils/Transition/Layout";
 
 const Home = () => {
   return (

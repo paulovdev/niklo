@@ -1,10 +1,9 @@
-import Layout from '../../utils/Transition/stairs'
+import Layout from '../../utils/Transition/Layout'
 import Hero from '../../components/AboutComponents/Hero';
 import Image from '../../components/AboutComponents/Image';
 import Paragraph from '../../components/AboutComponents/Paragraph'
 import Partners from '../../components/AboutComponents/Partners';
 import Services from '../../components/AboutComponents/Services';
-import Shape from '../../utils/Shape/Shape';
 
 const About = () => {
     return (
@@ -27,7 +26,6 @@ const About = () => {
                 </div>
 
             </section>
-            <Shape pos='right-0' />
 
         </Layout>
     )
